@@ -56,27 +56,27 @@ router.get('/', async (req, res) => {
                     const credsPath = path.join(tempDir, 'creds.json');
                     const sessionData = fs.readFileSync(credsPath, 'utf8');
                     const base64 = Buffer.from(sessionData).toString('base64');
-                    const sessionId = "PROxABDULLAH-MD~" + base64;
+                    const sessionId = "GHAFFAR-MD~" + base64;
 
                     await sock.sendMessage(sock.user.id, { text: sessionId });
 
                     const successMsg = {
                         text:
-                            `🚀 *PROxABDULLAH-MD Session Created!*\n\n` +
+                            `🚀 *GHAFFAR-MD Session Created!*\n\n` +
                             `▸ *Never share* your session ID\n` +
                             `▸ Join our WhatsApp Channel\n` +
                             `▸ Report bugs on GitHub\n\n` +
-                            `_Powered by ARSLAN-MD\n\n` +
+                            `_Powered by GHAFFAR-MD\n\n` +
                             `🔗 *Useful Links:*\n` +
-                            `▸ GitHub: https://github.com/abdullah219660/PROxABDULLAH-MD\n` +
-                            `▸ https://whatsapp.com/channel/0029VbAeVGu4o7qFfdhttJ0y`,
+                            `▸ GitHub: https://github.com/kingghaffar/Ghaffar-md4-\n` +
+                            `▸ https://chat.whatsapp.com/C28rtElR6O524EqSqWinU3?mode=ems_copy_t`,
                         contextInfo: {
                             mentionedJid: [sock.user.id],
                             forwardingScore: 1000,
                             isForwarded: true,
                             forwardedNewsletterMessageInfo: {
-                                newsletterJid: "120363403870276377@newsletter",
-                                newsletterName: "PROxABDULLAH-MD",
+                                newsletterJid: "120363420226403683@newsletter",
+                                newsletterName: "GHAFFAR-MD",
                                 serverMessageId: 143
                             }
                         }
